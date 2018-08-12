@@ -1,8 +1,7 @@
 # CrowdLending
 Blockchain based Crowd Lending and Borrowing Platform for Individuals, ICO's, Governments etc
 
-# 
-Problem Statement
+## Problem Statement
 Creditors Perspective 
 - There is no platform for Financiers to Crowdlend loans at global level.
 Debitors Perspective 
@@ -15,7 +14,7 @@ We have built a Crowdlend Platform on top of Dharma Protocol where
  Multiple Lenders can lend money in small amount for small duration and gain interests on lent money.
 
 
-# Steps to run CrowdLending Platform Locally
+## Steps to run CrowdLending Platform Locally
 - `cd CrowdLending/dapp/`
 - `npm run blockchain`  - Run local Blockchain
 - `cd node_modules/@dharmaprotocol/contracts`
