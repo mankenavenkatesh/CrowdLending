@@ -1,0 +1,10 @@
+.Header {
+    background-color: #082c30;
+    color: #ffffff;
+    justify-content: flex-start;
+}
+
+.Header .logo {
+    width: 2.5em;
+    margin-right: 25px;
+}

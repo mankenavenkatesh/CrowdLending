@@ -1,0 +1,9 @@
+{{#if parameters}}
+**Parameters:**
+
+{{getParametersTableHeaders parameters}}
+{{#each parameters}}
+| {{#compact}}{{#each flags}}`{{this}}` {{/each}}{{ name }} | {{#with type}}{{>type}}{{/with}}{{#if defaultValue}} | {{defaultValue}} | {{else}} | {{/if}}{{#if comment}} {{#getMarkdownFromHtml}}{{#markdown}}{{ getStrippedComment comment }}{{/markdown}}{{/getMarkdownFromHtml}} |{{/if}}{{/compact}}
+{{/each}}
+{{getNewLine}}{{getNewLine}}
+{{/if}}

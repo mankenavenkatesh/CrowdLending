@@ -1,0 +1,22 @@
+{
+    "name": "test-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@dharmaprotocol/dharma.js": "0.1.15",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1",
+        "react-scripts": "1.1.4",
+        "truffle-contract": "^3.0.6"
+    },
+    "devDependencies": {
+        "dharma-chain": "1.0.9"
+    },
+    "scripts": {
+        "blockchain": "dharma-chain",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
+}
