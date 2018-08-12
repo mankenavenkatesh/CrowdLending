@@ -36,11 +36,11 @@ export default class TutorialStatus extends Component {
                     amountOutstanding={amountOutstanding}
                     tokenSymbol={tokenSymbol}
                 />
-                <CollateralSummary
+                {/* <CollateralSummary
                     isCollateralWithdrawn={isCollateralWithdrawn}
                     isCollateralSeizable={isCollateralSeizable}
                     isCollateralReturnable={isCollateralReturnable}
-                />
+                /> */}
             </div>
         );
     }

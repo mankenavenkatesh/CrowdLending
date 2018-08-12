@@ -11,7 +11,7 @@ export default class Create extends Component {
         return (
             <div className="OpenTutorial container Tutorial" id="open-loan">
                 <header className="App-header">
-                    <h3 className="App-title">Request a Loan on Dharma</h3>
+                    <h3 className="App-title">Request a Loan on CrowdLend</h3>
                 </header>
 
                 <RequestLoanForm createLoanRequest={createLoanRequest} disableForm={isDisabled} />

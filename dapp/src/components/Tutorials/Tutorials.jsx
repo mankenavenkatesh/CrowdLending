@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Create from "./Create";
+import List from "./List";
 import Fill from "./Fill";
 import Repay from "./Repay";
 import Collateral from "./Collateral";
@@ -36,14 +37,20 @@ export default class Tutorials extends Component {
                     isCreated={isCreated}
                     isAwaitingBlockchain={isAwaitingBlockchain}
                 />
-                <Fill
+                <List 
+                    // listLoanRequest = {listLoanRequest}
+                />
+                {/* <Lend 
+
+                /> */}
+                {/* <Fill
                     allowPrincipalTransfer={allowPrincipalTransfer}
                     hasAllowedPrincipalTransfer={hasAllowedPrincipalTransfer}
                     fillLoanRequest={fillLoanRequest}
                     isFilled={isFilled}
                     isCreated={isCreated}
                     isAwaitingBlockchain={isAwaitingBlockchain}
-                />
+                /> */}
                 <Repay
                     makeRepayment={makeRepayment}
                     allowRepayments={allowRepayments}
@@ -52,11 +59,11 @@ export default class Tutorials extends Component {
                     isRepaid={isRepaid}
                     isAwaitingBlockchain={isAwaitingBlockchain}
                 />
-                <Collateral
+                {/* <Collateral
                     returnCollateral={returnCollateral}
                     isCollateralReturnable={isCollateralReturnable}
                     isAwaitingBlockchain={isAwaitingBlockchain}
-                />
+                /> */}
             </div>
         );
     }

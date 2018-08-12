@@ -205,12 +205,12 @@ export default class App extends Component {
             // console.log(dharma.contracts.cache.DebtToken);
             // console.log(dharma.contracts.cache.DebtToken.abi);
 
-            const debtTokenContract = contract(DebtToken);
-            debtTokenContract.setProvider(web3.currentProvider);            
-            let debtTokenContractInstance = await debtTokenContract.deployed();
-            console.log("debtTokenContract Instance- ");
-            console.log(debtTokenContractInstance);
-            await debtTokenContractInstance.safeTransferFrom(creditorAddress,cfrcAddress, debtTokenId, 1);
+            // const debtTokenContract = contract(DebtToken);
+            // debtTokenContract.setProvider(web3.currentProvider);            
+            // let debtTokenContractInstance = await debtTokenContract.deployed();
+            // console.log("debtTokenContract Instance- ");
+            // console.log(debtTokenContractInstance);
+            // await debtTokenContractInstance.safeTransferFrom(creditorAddress,cfrcAddress, debtTokenId, 1);
 
             // await dharma.contracts.cache.DebtToken.safeTransferFrom.sendTransactionAsync(creditorAddress, cfrcAddress, debtTokenId, 0, {from : creditorAddress});
             
@@ -308,6 +308,7 @@ export default class App extends Component {
 
             await this.allowPrincipalTransfer();
             await this.fillLoanRequest();   
+            
             console.log("Fill Loan Request Completed.....Debt Token should be created");
             this.reloadData();
         } catch (e) {
